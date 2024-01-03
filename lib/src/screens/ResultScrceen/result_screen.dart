@@ -174,7 +174,7 @@ class _ResultScreenState extends State<ResultScreen>
                           color: Colors.black.withOpacity(0.8),
                           border: Border.all(color: Colors.green)),
                       child: FutureBuilder<List<Score>>(
-                        future: DB.getTopScores(),
+                        future: DB.getTopScores(questionsProvider.topicSelect),
                         builder: (context, snapshot) {
                           if (snapshot.connectionState ==
                               ConnectionState.waiting) {

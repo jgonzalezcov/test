@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:provider/provider.dart';
+import 'package:test/src/models/question_model.dart';
 import 'package:test/src/providers/questions_provider.dart';
 import 'package:test/src/screens/QuestionScreen/widgets/question_widget/question_widget.dart';
 

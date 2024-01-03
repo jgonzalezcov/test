@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test/src/providers/chronometer.dart';
 import 'package:test/src/providers/questions_provider.dart';
 import 'package:test/src/providers/view_state_provider.dart';
 import 'package:test/src/routers/app.routes.dart';
@@ -14,7 +13,6 @@ class MyApp extends StatelessWidget {
         providers: [
           ChangeNotifierProvider(create: (_) => ViewStateProvider()),
           ChangeNotifierProvider(create: (_) => QuestionsProvider()),
-          ChangeNotifierProvider(create: (_) => CronometerProvider()),
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,

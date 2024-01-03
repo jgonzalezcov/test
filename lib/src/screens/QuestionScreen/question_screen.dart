@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test/src/providers/chronometer.dart';
+
 import 'package:test/src/providers/view_state_provider.dart';
 import 'package:test/src/screens/QuestionScreen/widgets/background/background_widget.dart';
 import 'package:test/src/screens/QuestionScreen/widgets/carousel_widget/carousel_widget.dart';
@@ -16,12 +16,6 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   void initState() {
     super.initState();
-
-    Future.delayed(Duration.zero, () {
-      var cronometroProvider =
-          Provider.of<CronometerProvider>(context, listen: false);
-      cronometroProvider.iniciarCronometro();
-    });
   }
 
   @override

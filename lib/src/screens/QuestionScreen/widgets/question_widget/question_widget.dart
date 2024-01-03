@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:provider/provider.dart';
+import 'package:test/src/models/question_model.dart';
 import 'dart:async';
 import 'package:test/src/providers/questions_provider.dart';
 import 'package:test/src/database/db.dart';

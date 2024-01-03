@@ -46,11 +46,12 @@ class DB {
     });
   }
 
-  // Obtener los 10 scores con los valores más altos
-  static Future<List<Score>> getTopScores() async {
+  static Future<List<Score>> getTopScores(String topic) async {
     Database database = await _openDB();
     final List<Map<String, dynamic>> maps = await database.query(
       'scores_player',
+      where: 'topic = ?',
+      whereArgs: [topic],
       orderBy: 'score DESC, date DESC',
       limit: 10,
     );
